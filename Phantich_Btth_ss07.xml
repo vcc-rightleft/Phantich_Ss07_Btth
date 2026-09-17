@@ -1,0 +1,97 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0">
+  <diagram id="dang-ky-mon-hoc" name="DangKyMonHoc_ClassDiagram">
+    <mxGraphModel dx="2046" dy="1186" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="cls_sinhvien" parent="1" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;strokeColor=#000000;strokeWidth=1.5;fillColor=#ffffff;" value="&lt;b&gt;SinhVien&lt;/b&gt;" vertex="1">
+          <mxGeometry height="210" width="340" x="60" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_sinhvien_attrs" parent="cls_sinhvien" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=12;fontFamily=Helvetica;" value="- maSV: String&#xa;- tenSV: String&#xa;- ngaySinh: Date" vertex="1">
+          <mxGeometry height="65" width="340" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_sinhvien_sep" parent="cls_sinhvien" style="line;strokeWidth=1.5;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="340" y="95" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_sinhvien_methods" parent="cls_sinhvien" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=12;fontFamily=Helvetica;" value="+ dangNhap(): void&#xa;+ xemDanhSachLopHocPhan(): void&#xa;+ dangKyLopHocPhan(lhp: LopHocPhan): PhieuDangKy" vertex="1">
+          <mxGeometry height="97" width="340" y="103" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_phieudangky" parent="1" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;strokeColor=#000000;strokeWidth=1.5;fillColor=#ffffff;" value="&lt;b&gt;PhieuDangKy&lt;/b&gt;" vertex="1">
+          <mxGeometry height="120" width="260" x="580" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_pdk_attrs" parent="cls_phieudangky" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=12;fontFamily=Helvetica;" value="- maPhieu: String&#xa;- ngayDangKy: Date" vertex="1">
+          <mxGeometry height="50" width="260" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_pdk_sep" parent="cls_phieudangky" style="line;strokeWidth=1.5;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="260" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_pdk_methods" parent="cls_phieudangky" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=12;" value="" vertex="1">
+          <mxGeometry height="22" width="260" y="88" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_monhoc" parent="1" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;strokeColor=#000000;strokeWidth=1.5;fillColor=#ffffff;" value="&lt;b&gt;MonHoc&lt;/b&gt;" vertex="1">
+          <mxGeometry height="150" width="200" x="150" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_monhoc_attrs" parent="cls_monhoc" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=12;fontFamily=Helvetica;" value="- maMon: String&#xa;- tenMon: String&#xa;- soTinChi: int" vertex="1">
+          <mxGeometry height="70" width="200" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_monhoc_sep" parent="cls_monhoc" style="line;strokeWidth=1.5;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="200" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_monhoc_methods" parent="cls_monhoc" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=12;" value="" vertex="1">
+          <mxGeometry height="32" width="200" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_lophocphan" parent="1" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;strokeColor=#000000;strokeWidth=1.5;fillColor=#ffffff;" value="&lt;b&gt;LopHocPhan&lt;/b&gt;" vertex="1">
+          <mxGeometry height="190" width="300" x="540" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_lhp_attrs" parent="cls_lophocphan" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=12;fontFamily=Helvetica;" value="- maLHP: String&#xa;- tenLHP: String&#xa;- siSoToiDa: int" vertex="1">
+          <mxGeometry height="70" width="300" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_lhp_sep" parent="cls_lophocphan" style="line;strokeWidth=1.5;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="300" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_lhp_methods" parent="cls_lophocphan" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=12;fontFamily=Helvetica;" value="+ kiemTraChoTrong(): boolean" vertex="1">
+          <mxGeometry height="72" width="300" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_sv_pdk" edge="1" parent="1" source="cls_sinhvien" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=diamond;startFill=1;endArrow=none;strokeWidth=1.5;strokeColor=#000000;" target="cls_phieudangky" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_sv_pdk_src" connectable="0" parent="edge_sv_pdk" style="edgeLabel;html=1;align=center;verticalAlign=bottom;fontSize=13;fontStyle=1;fontFamily=Helvetica;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.75" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lbl_sv_pdk_tgt" connectable="0" parent="edge_sv_pdk" style="edgeLabel;html=1;align=center;verticalAlign=bottom;fontSize=14;fontStyle=1;fontFamily=Helvetica;" value="*" vertex="1">
+          <mxGeometry relative="1" x="0.75" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_lhp_pdk" edge="1" parent="1" source="cls_lophocphan" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=diamond;startFill=1;endArrow=none;strokeWidth=1.5;strokeColor=#000000;" target="cls_phieudangky" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_lhp_pdk_src" connectable="0" parent="edge_lhp_pdk" style="edgeLabel;html=1;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;fontFamily=Helvetica;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.75" as="geometry">
+            <mxPoint x="14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lbl_lhp_pdk_tgt" connectable="0" parent="edge_lhp_pdk" style="edgeLabel;html=1;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;fontFamily=Helvetica;" value="*" vertex="1">
+          <mxGeometry relative="1" x="0.75" as="geometry">
+            <mxPoint x="14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_monhoc_lhp" edge="1" parent="1" source="cls_monhoc" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=diamond;startFill=0;endArrow=none;strokeWidth=1.5;strokeColor=#000000;" target="cls_lophocphan" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_monhoc_lhp_src" connectable="0" parent="edge_monhoc_lhp" style="edgeLabel;html=1;align=center;verticalAlign=bottom;fontSize=13;fontStyle=1;fontFamily=Helvetica;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.75" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lbl_monhoc_lhp_tgt" connectable="0" parent="edge_monhoc_lhp" style="edgeLabel;html=1;align=center;verticalAlign=bottom;fontSize=14;fontStyle=1;fontFamily=Helvetica;" value="*" vertex="1">
+          <mxGeometry relative="1" x="0.75" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
